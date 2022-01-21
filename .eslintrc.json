@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-use-before-define": "off",
+        "react/prop-types": "off",
+        "import/no-anonymous-default-export": "off",
+        "react/display-name": "off",
+        "no-unused-vars": "warn",
+        "no-shadow": "off",
+        "max-len": "off",
+        "arrow-parens": "off",
+        "implicit-arrow-linebreak": "off",
+        "linebreak-style": 0,
+        "indent": [1, 4, {
+          "SwitchCase": 1
+        }],
+        "react/jsx-indent": [1, 4],
+        "react/jsx-indent-props": [1, 4],
+        "react/jsx-filename-extension": [1, {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }],
+        "react/jsx-props-no-spreading": "off",
+        "object-curly-newline": [2, {
+          "consistent": true
+        }],
+        "jsx-quotes": [1, "prefer-single"],
+        "no-underscore-dangle": "off",
+        "arrow-body-style": "off",
+        "react/no-unused-state": "warn",
+        "import/no-cycle": "off",
+        "react/function-component-definition": ["error", {
+          "namedComponents": "arrow-function"
+        }]
+      }
+}
